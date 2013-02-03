@@ -15,6 +15,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u63-v6-Hk6">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Hc2-UN-Zh6"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Db-QF-fkI">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -37,11 +40,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="u63-v6-Hk6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="OxV-T4-4Q4"/>
                             <constraint firstItem="4wp-9j-7Ga" firstAttribute="centerX" secondItem="6Db-QF-fkI" secondAttribute="centerX" type="default" id="Tf9-ku-AHI"/>
                             <constraint firstAttribute="trailing" secondItem="6Db-QF-fkI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iS0-dZ-sDD"/>
                             <constraint firstItem="6Db-QF-fkI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mHo-RF-NbE"/>
                             <constraint firstItem="u63-v6-Hk6" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nap-bO-1af"/>
+                            <constraint firstItem="u63-v6-Hk6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="34" id="njY-Ma-rei"/>
                             <constraint firstItem="6Db-QF-fkI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="180" id="oIR-IF-qGx"/>
                             <constraint firstAttribute="trailing" secondItem="u63-v6-Hk6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tcn-hW-eVg"/>
                             <constraint firstAttribute="bottom" secondItem="4wp-9j-7Ga" secondAttribute="bottom" constant="60" id="ztk-pu-k7K"/>
