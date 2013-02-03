@@ -47,6 +47,10 @@
                             <constraint firstAttribute="bottom" secondItem="4wp-9j-7Ga" secondAttribute="bottom" constant="60" id="ztk-pu-k7K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="6Db-QF-fkI" id="o0F-IT-0JK"/>
+                        <outlet property="textField" destination="u63-v6-Hk6" id="yNO-AM-fhq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,6 +61,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HelloWorldViewController.h"/>
             <relationships>
                 <relationship kind="action" name="changeGreeting:"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
